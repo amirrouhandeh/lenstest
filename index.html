@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Lens and Camera Selectors</title>
+    <link rel="stylesheet" type="text/css" href="/src/styles.css">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+      <button id="prevLens"><img src="/src/back_arrow.svg" alt="Previous"></button>
+      <button id="currentLens">Select Lens</button>
+      <button id="nextLens"><img src="/src/next_page.svg" alt="Next"></button>
+      
+    </div>
+    <div id="top-controls">
+      <button id="flip"><img src="/src/switch_camera.svg" alt="Flip Camera"></button>
+      <button id="takePhoto"><img src="/src/record.svg" alt="Take Photo"></button>
+      <button id="start">Start Recording</button>
+      <button id="stop" disabled>Stop Recording</button>
+    </div>
+    <section id="video-container" style="display: none">
+      <video loop controls autoplay id="video"></video>
+      <div>
+        <button id="download">Download Video</button>
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
